@@ -11,7 +11,7 @@ body {
 }
 
 header{
-    background-color:rgb(112, 52, 168);
+    
     color:#fff;
       
 }
@@ -32,21 +32,22 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.589);
 }
 
-.text {
+#text {
     padding: 10px;
     text-align: center;
 }
 
-.img {
+img {
    
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    padding: 10px;
+    padding: 70px 10px;
     align-items: center;
 }
 
 footer {
     font-size: 13px;
     font-style: italic;
+    color: #fff;
 }
