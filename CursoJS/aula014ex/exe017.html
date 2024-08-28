@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Saudaçao do Dia</title>
+    <title>Taboada</title>
 </head>
-<body onload="carregar()">
+<body>
      <header>
         <h1>
-            Hora do Dia
+            Taboada
         </h1>
      </header>
 
      <section>
         <div id="text">
-            loading
+            <p>Numero: <input type="number" id="inicio"><input type="button" value="Gerar Taboada" onclick="gerarTaboada()"></p>
         </div>
 
-        <div id="img">
-            <img id="imagem" src="imagens/lindo-amanhecer-na-praia-sob-um-ceu-azul_181624-26939.avif" alt="">
+        <div id="res">
+            <form>
+                <select name="" id="">
+                    <option value="red"></option>
+                    <option value="blue"></option>
+                </select>
+            </form>
         </div>
      </section>
 
