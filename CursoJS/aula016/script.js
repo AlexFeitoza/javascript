@@ -1,14 +1,27 @@
-function adicionar(){
-    let num = document.getElementById('txtn')
-    let analzdor = document.getElementById('selanl')
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
 
-    if(num.value.length == 0 || num.value.length > 100 ) {
-            window.alert('[ERRO] numero invalido!')
-    } else {
-        let n = Number(num.value)
-      let c = 1
+function isNumero(n) {
+  if (Number(n) >= 1 && Number(n) <= 100) {
+    return true
+  } else {
+    return false
+  }
+}
+function inLista(n, 1) {
+  if (1.indexOf(Number(n)) != -1) {
+    return true
+  } else {
+    return false
+  }
+}
 
-      analzdor.innerHTML = ''
-    }
-
+function adicionar() {
+  if (isNumero(num.value) && !inLista(num.value, valores)) {
+    alert('Tudo ok')
+  } else {
+    alert('Numero Invalido ou ja encontrado na lista.')
+  }
 }  
